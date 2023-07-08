@@ -18,9 +18,8 @@ namespace MillerSoft.TicTacToe
 
         public Sprite CrossSprite => _crossSprite;
         public Sprite ZeroSprite => _zeroSprite;
-        public Sprite WhiteSprite => _whiteSprite;
 
-        private SpriteRenderer _spriteRenderer;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
         [SerializeField] private Sprite _crossSprite;
         [SerializeField] private Sprite _zeroSprite;
@@ -30,7 +29,6 @@ namespace MillerSoft.TicTacToe
 
         private void Awake()
         {
-            _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             _isClicked = false;
         }
 

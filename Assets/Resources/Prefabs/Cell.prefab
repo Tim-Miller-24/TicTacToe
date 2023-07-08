@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beac509d964d7d547ad42ac3d6dd53eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 4076394797778334652}
   _crossSprite: {fileID: 21300000, guid: a9293443b93231a4ea27e3b7ec4a619a, type: 3}
   _zeroSprite: {fileID: 21300000, guid: ef227bc97bfd5b445bb5a006ebe7e909, type: 3}
   _whiteSprite: {fileID: 21300000, guid: fdbfcc2f798aaa6449b148d961d7007b, type: 3}

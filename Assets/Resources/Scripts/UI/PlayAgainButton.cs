@@ -11,7 +11,7 @@ namespace MillerSoft.TicTacToe
     {
         public event Action RestartButtonClicked = delegate { };
 
-        private Button _restartButton;
+        [SerializeField] private Button _restartButton;
 
         private GameCore _gameCore;
 
@@ -19,9 +19,9 @@ namespace MillerSoft.TicTacToe
 
         private Map _map;
 
-        private void Awake()
+        public void OnPointerClick(PointerEventData eventData)
         {
-            _restartButton = GetComponent<Button>();
+            RestartGame(_gameCore);
         }
 
         public void GetGameCore(GameCore gameCore, List<Cell> cells, Map map)
@@ -43,12 +43,6 @@ namespace MillerSoft.TicTacToe
             }
 
             RestartButtonClicked.Invoke();
-            
-        }
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            RestartGame(_gameCore);
         }
     }
 }

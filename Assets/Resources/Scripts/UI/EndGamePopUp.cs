@@ -13,11 +13,10 @@ namespace MillerSoft.TicTacToe
     {
         [SerializeField] private PlayAgainButton _playAgainButton;
 
-        private TextMeshProUGUI _textTitle;
+        [SerializeField] private TextMeshProUGUI _textTitle;
 
-        private void Awake()
-        {
-            _textTitle = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        private void Awake() 
+        { 
             gameObject.SetActive(false);
         }
 
